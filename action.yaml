@@ -1,0 +1,19 @@
+name: TiltMaestro Custom Action
+ 
+
+description: Greet someone
+
+
+inputs:
+  who-to-greet:
+    description: who to greet
+    required: true
+    default: Hello
+
+outputs:
+  time:
+    description: time greeted
+
+runs:
+  using: node20
+  main: dist/index.js    
